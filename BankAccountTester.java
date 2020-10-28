@@ -10,7 +10,7 @@ public class BankAccountTester{
 
     System.out.println(Harry.getBalance());
     System.out.println(Harry.getAccountID());
-    System.out.println(Harry.toString());
+    System.out.println(Harry);
 
     BankAccount Pan = new BankAccount(427797, "yuhyuhyuh");
     Pan.deposit(-35);
@@ -20,8 +20,11 @@ public class BankAccountTester{
 
     System.out.println(Pan.getBalance());
     System.out.println(Pan.getAccountID());
-    System.out.println(Pan.toString());
+    System.out.println(Pan);
 
+    System.out.println(Harry.transferTo(Pan, 1, "excellentpassword"));
+    System.out.println(Harry);
+    System.out.println(Pan);
   }
 
 }
